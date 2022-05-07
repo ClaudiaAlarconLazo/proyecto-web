@@ -22,6 +22,7 @@
 </head>
 <body>
 
+	<%@include file="includes/menu.jsp" %>
 	<%
 	IPersonaDAO personaDao = new PersonaDAOImpl();
 	%>
@@ -100,15 +101,15 @@
 						<form class="p-3 shadow-sm m-3 " action="Proccess" method="post">
 							<div class="mb-3">
 								<label for="nombre" class="form-label">Nombre</label> <input
-									type="text" class="form-control" name="nombreForm">
+									type="text" class="form-control" name="nombreForm" required>
 							</div>
 							<div class="mb-3">
 								<label for="apellido" class="form-label">Apellido</label> <input
-									type="text" class="form-control" name="apellidoForm">
+									type="text" class="form-control" name="apellidoForm" required>
 							</div>
 							<div class="mb-3">
 								<label for="edad" class="form-label">Edad</label> <input
-									type="text" class="form-control" name="edadForm">
+									type="text" class="form-control" name="edadForm" required>
 							</div>
 
 
